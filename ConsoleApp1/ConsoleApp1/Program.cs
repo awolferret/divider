@@ -9,11 +9,13 @@ namespace ConsoleApp1
             Random random = new Random();
             int number = random.Next(1, 28);
             int count = 0;
+            int minValue = 99;
+            int maxValue = 1000;
 
-            for (int i = number; i < 1000; i += number)
+            for (int i = number; i < maxValue; i += number)
             {
 
-                if (i > 99)
+                if (i > minValue)
                 {
                     count++;
                 }
