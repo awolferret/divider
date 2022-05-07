@@ -12,6 +12,7 @@ namespace ConsoleApp1
 
             for (int i = number; i < 1000; i += number)
             {
+
                 if (i > 99)
                 {
                     count++;
