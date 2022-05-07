@@ -8,12 +8,16 @@ namespace ConsoleApp1
         {
             Random random = new Random();
             int number = random.Next(1, 28);
-            Console.WriteLine(number);
+            int count = 0;
 
-            for (int i = number; i < 1000 & i > 100 ; i += number)
+            for (int i = number; i < 1000; i += number)
             {
-                Console.WriteLine(i);
+                if (i > 99)
+                {
+                    count++;
+                }
             }
+            Console.WriteLine(count);
         }
     }
 }
